@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 import { connect } from 'react-redux'
 import GoogleLogin from 'react-google-login'
 import { 
@@ -37,7 +38,7 @@ class SignInWith extends Component {
                     <GoogleLogin className="button google"
                     clientId="666343537606-bqbogd2inc6be1pi2m02fhaoqdrtadrh.apps.googleusercontent.com"
                     onSuccess={responseGoogle}
-                    onFailure={responseGoogle} >
+                    onFailure={responseGoogle}>
                         <i className="fa fa-google"></i><span> SignIn with Google</span>
                     </GoogleLogin>
                 </li>

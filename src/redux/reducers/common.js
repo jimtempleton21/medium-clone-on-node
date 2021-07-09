@@ -1,7 +1,7 @@
 
 const defaultState = {
   appName: '',
-  modalMode: false
+  modalMode: true
 };
 
 export default (state = defaultState, action) => {

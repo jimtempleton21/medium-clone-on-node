@@ -13,15 +13,16 @@ const url = process.env.MONGODB_URI || "mongodb://localhost:27017/medium";
 
 /** configure cloudinary */
 cloudinary.config({
-  cloud_name: "chidumennamdi",
-  api_key: "",
-  api_secret: ""
+  cloud_name: "dxkh8szxn",
+  api_key: "112618783258424",
+  api_secret: "St1J2RVA8kAiw1pPI4C5HV9lZ8w"
 });
 
 /** connect to MongoDB datastore */
 try {
   mongoose.connect(url, {
     //useMongoClient: true
+    useUnifiedTopology: true
   });
 } catch (error) {}
 
